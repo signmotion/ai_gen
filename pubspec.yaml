@@ -1,7 +1,7 @@
 name: ai_gen
 description: >-
-  A standartized and well-tested AI generators: names, images, geo, colors,
-  people, animals, etc.
+  Generates names, images, geo, colors, people, animals, etc. by sending queries to
+  artificial intelligence... or using fake generators.
 repository: https://github.com/signmotion/ai_gen
 publish_to: none
 topics:
@@ -22,7 +22,7 @@ environment:
   sdk: ">=3.0.0 <4.0.0"
 
 dependencies:
-  collection: ^1.18.0
+  collection: ">=1.16.0 <3.0.0"
   faker: ^2.1.0
   id_gen: ^0.6.0
   meta: ">=1.10.0 <2.0.0"

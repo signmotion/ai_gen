@@ -4,7 +4,7 @@
 
 [![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/signmotion/ai_gen/master/LICENSE)
 
-Generate data sending a request to AI.
+Generates data by sending queries to artificial intelligence or using fake generators.
 The easy-to-use and well-tested library.
 
 ## Usage
