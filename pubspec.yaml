@@ -1,0 +1,35 @@
+name: ai_gen
+description: >-
+  A standartized and well-tested AI generators: names, images, geo, colors,
+  people, animals, etc.
+repository: https://github.com/signmotion/ai_gen
+publish_to: none
+topics:
+  - generator
+  - ai
+  - prompt
+  - generative
+  - rpg
+
+# Format:
+#   version: major.minor.patch
+# You can calculate the number version code by this formula:
+#   code = m[A]jor * 100 * 100 + m[I]nor * 100 + [P]atch
+# Otherwise: +AAIIPP
+version: 0.1.0
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  collection: ^1.18.0
+  faker: ^2.1.0
+  id_gen: ^0.6.0
+  meta: ">=1.10.0 <2.0.0"
+  thematic_names: ^0.3.0
+  uni_color_name:
+    path: ../uni_color_name
+
+dev_dependencies:
+  lints: ^3.0.0
+  test: ^1.25.2
