@@ -8,15 +8,25 @@ typedef NameAndIdPlaceR = ({
   Map<String, String> predominantColors,
 });
 
-class NameAndIdPlaceFakeAiGen {
-  const NameAndIdPlaceFakeAiGen();
+class NameAndIdPlaceAiGen extends AiGen<NameAndIdPlaceR, AiGenOptions> {
+  const NameAndIdPlaceAiGen({super.fake})
+      : super(
+          fakeProvider: const NameAndIdPlaceFakeProvider(),
+          realProvider: const NameAndIdPlaceRealProvider(),
+        );
+}
 
+class NameAndIdPlaceFakeProvider extends FakeProvider<NameAndIdPlaceR> {
+  const NameAndIdPlaceFakeProvider();
+
+  @override
   NameAndIdPlaceR get next {
-    final title = _genNames.next.title;
+    final title = genNames.next.title;
+
     final numColors = Random().nextInt(5 + 1) + 1;
     final predominantColors = <String, String>{};
     for (var i = 0; i < numColors; ++i) {
-      final color = _colorMap.randomEntry;
+      final color = colorMap.randomEntry;
       predominantColors[color.key] =
           color.value.colorToRgbInt8.intToRgbInt8String;
     }
@@ -29,9 +39,11 @@ class NameAndIdPlaceFakeAiGen {
       predominantColors: predominantColors,
     );
   }
+}
 
-  static final faker = Faker();
+class NameAndIdPlaceRealProvider extends RealProvider<NameAndIdPlaceR> {
+  const NameAndIdPlaceRealProvider();
 
-  static final _colorMap = const UniColorName().palette.map;
-  static final _genNames = Names.bakeries();
+  @override
+  NameAndIdPlaceR get next => throw UnimplementedError();
 }

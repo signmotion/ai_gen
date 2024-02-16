@@ -7,10 +7,10 @@ import 'package:test/test.dart';
 void main() {
   group('AiGen', () {
     test('NameAndIdPlaceFakeAiGen', () {
-      const gen = NameAndIdPlaceFakeAiGen();
+      const gen = NameAndIdPlaceAiGen(fake: true);
 
-      final a = gen.next;
-      final b = gen.next;
+      final a = gen.next!;
+      final b = gen.next!;
 
       expect(a.planHid, isNot(equals(b.planHid)));
       expect(a.planHid, isNotEmpty);
