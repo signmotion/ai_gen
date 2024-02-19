@@ -5,7 +5,7 @@ typedef NameAndIdPlaceR = ({
   String planUid,
   String title,
   String description,
-  Map<String, String> predominantColors,
+  Map<String, int> predominantColors,
 });
 
 class NameAndIdPlaceAiGen extends AiGen<NameAndIdPlaceR, AiGenOptions> {
@@ -24,11 +24,10 @@ class NameAndIdPlaceFakeProvider extends FakeProvider<NameAndIdPlaceR> {
     final title = genNames.next.title;
 
     final numColors = Random().nextInt(5 + 1) + 1;
-    final predominantColors = <String, String>{};
+    final predominantColors = <String, int>{};
     for (var i = 0; i < numColors; ++i) {
-      final color = colorMap.randomEntry;
-      predominantColors[color.key] =
-          color.value.colorToRgbInt8.intToRgbInt8String;
+      final color = colorMap.randomEntry();
+      predominantColors[color.key] = color.value.colorRgbToIntRgb;
     }
 
     return (

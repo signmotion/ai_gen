@@ -11,6 +11,7 @@ abstract class AiGen<R extends Object, O extends AiGenOptions> {
     this.fakeProvider,
     this.realProvider,
   }) :
+        // TODO(sign): fine The analysis thrown error for const-declaration.
         //assert(fake && fakeProvider != null,
         //    'The fake provider should be defined when `fake == true` options.'),
         //assert(!fake && realProvider != null,
