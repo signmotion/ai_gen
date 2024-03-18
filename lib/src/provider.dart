@@ -16,7 +16,9 @@ abstract class RealProvider<R extends Object> extends Provider<R> {
 /// Contains generators and data sets as helpers for constructing data.
 /// See [RandomListItem.randomItem], [RandomMapItem.randomEntry].
 abstract class FakeProvider<R extends Object> extends Provider<R> {
-  const FakeProvider();
+  const FakeProvider({this.keywordsImages});
+
+  final List<String>? keywordsImages;
 
   Faker get faker => Faker();
 
@@ -25,6 +27,9 @@ abstract class FakeProvider<R extends Object> extends Provider<R> {
 
   Names get genNames => _genNames;
   static final _genNames = Names.bakeries();
+
+  Images get genImages => _genImages;
+  Images get _genImages => LocalImages();
 }
 
 /// Provides nothing.

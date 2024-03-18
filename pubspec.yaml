@@ -24,9 +24,13 @@ environment:
 dependencies:
   collection: ">=1.16.0 <3.0.0"
   faker: ^2.1.0
-  id_gen: ^0.6.0
+  id_gen: ^0.7.0
+  image: ^4.1.7
   meta: ">=1.10.0 <2.0.0"
-  thematic_names: ^0.4.0
+  thematic_images:
+    path: ../thematic_images
+  thematic_names:
+    path: ../thematic_names
   uni_color_name:
     path: ../uni_color_name
 

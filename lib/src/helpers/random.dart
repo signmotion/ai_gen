@@ -1,7 +1,7 @@
-part of '../../../ai_gen.dart';
+import 'dart:math';
 
 /// ! Copied from `dart_helpers`.
-extension RandomListItem<T> on List<T> {
+extension RandomListItemExt<T> on List<T> {
   /// Random item from the [List].
   T randomItem() {
     if (isEmpty) {
@@ -28,7 +28,7 @@ extension RandomListItem<T> on List<T> {
 }
 
 /// ! Copied from `dart_helpers`.
-extension RandomMapItem<K, V> on Map<K, V> {
+extension RandomMapItemExt<K, V> on Map<K, V> {
   /// Random entry from the [Map].
   MapEntry<K, V> randomEntry() {
     if (isEmpty) {

@@ -81,6 +81,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.0.3"
+  dio:
+    dependency: transitive
+    description:
+      name: dio
+      sha256: "49af28382aefc53562459104f64d16b9dfd1e8ef68c862d5af436cc8356ce5a8"
+      url: "https://pub.dev"
+    source: hosted
+    version: "5.4.1"
   faker:
     dependency: "direct main"
     description:
@@ -141,12 +149,12 @@ packages:
     dependency: "direct main"
     description:
       name: id_gen
-      sha256: "3632d88f96a71d96f5c0df32f390c013663a2e726d09bc1668921fb2a832d2cb"
+      sha256: "83d37d4b891dbeadfad1d375ad17dd81f7a860a013b11b7f794679c8334395b3"
       url: "https://pub.dev"
     source: hosted
-    version: "0.6.0"
+    version: "0.7.0"
   image:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: image
       sha256: "4c68bfd5ae83e700b5204c1e74451e7bf3cf750e6843c6e158289cf56bda018e"
@@ -393,14 +401,20 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.6.0"
+  thematic_images:
+    dependency: "direct main"
+    description:
+      path: "../thematic_images"
+      relative: true
+    source: path
+    version: "0.1.0"
   thematic_names:
     dependency: "direct main"
     description:
-      name: thematic_names
-      sha256: da2e37cb478768c5b7c26922a20f0ce5b8d0d28041d47f1ac3dbcd13ab450a50
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.4.0"
+      path: "../thematic_names"
+      relative: true
+    source: path
+    version: "0.4.1"
   typed_data:
     dependency: transitive
     description:
@@ -415,7 +429,7 @@ packages:
       path: "../uni_color_name"
       relative: true
     source: path
-    version: "0.2.0"
+    version: "0.3.0"
   uuid:
     dependency: transitive
     description:
@@ -436,10 +450,10 @@ packages:
     dependency: transitive
     description:
       name: vm_service
-      sha256: a2662fb1f114f4296cf3f5a50786a2d888268d7776cf681aa17d660ffa23b246
+      sha256: e7d5ecd604e499358c5fe35ee828c0298a320d54455e791e9dcf73486bc8d9f0
       url: "https://pub.dev"
     source: hosted
-    version: "14.0.0"
+    version: "14.1.0"
   watcher:
     dependency: transitive
     description:
@@ -452,10 +466,10 @@ packages:
     dependency: transitive
     description:
       name: web
-      sha256: "1d9158c616048c38f712a6646e317a3426da10e884447626167240d45209cbad"
+      sha256: "97da13628db363c635202ad97068d47c5b8aa555808e7a9411963c533b449b27"
       url: "https://pub.dev"
     source: hosted
-    version: "0.5.0"
+    version: "0.5.1"
   web_socket_channel:
     dependency: transitive
     description:
@@ -475,10 +489,11 @@ packages:
   wfile:
     dependency: transitive
     description:
-      path: "../wfile"
-      relative: true
-    source: path
-    version: "0.3.3"
+      name: wfile
+      sha256: "76cd5440b6eaa6dd35a404b9d32b2dc7ed4c929616d28e1f8d664e77efe36c57"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.4.0"
   xml:
     dependency: transitive
     description:

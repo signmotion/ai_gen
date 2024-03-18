@@ -1,4 +1,4 @@
-part of '../../../ai_gen.dart';
+import 'package:id_gen/id_gen.dart';
 
 /// Generate Human ID.
 String genHid(String s) => _genHid.get(s);
