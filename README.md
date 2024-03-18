@@ -6,6 +6,7 @@
 
 Generates data by sending queries to artificial intelligence or using fake generators.
 The easy-to-use and well-tested library.
+Feel free to use it in your projects.
 
 ## Usage
 
@@ -20,6 +21,8 @@ TODO
 ```
 
 ## Welcome
+
+Requests and suggestions are warmly welcome.
 
 This package is open-source, stable and well-tested. Development happens on
 [GitHub](https://github.com/signmotion/ai_gen). Feel free to report issues
