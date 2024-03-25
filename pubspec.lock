@@ -149,10 +149,10 @@ packages:
     dependency: "direct main"
     description:
       name: id_gen
-      sha256: "83d37d4b891dbeadfad1d375ad17dd81f7a860a013b11b7f794679c8334395b3"
+      sha256: "985db64f8b3f077a1bee0177d18eb61afb1c49435a997f1eaf8c8a719c7ec36f"
       url: "https://pub.dev"
     source: hosted
-    version: "0.7.0"
+    version: "0.7.2"
   image:
     dependency: "direct main"
     description:
@@ -181,10 +181,10 @@ packages:
     dependency: transitive
     description:
       name: json_dart
-      sha256: debc7f3cfaaf81383ac1370fd435b317eca9977927b310ea8922e0e448bb3e13
+      sha256: "9ab4066092d5be0031dbc610f7b9237afd919eca4f1241c18e2dfbc0d4f47c84"
       url: "https://pub.dev"
     source: hosted
-    version: "0.1.0"
+    version: "0.1.1"
   lints:
     dependency: "direct dev"
     description:
@@ -429,7 +429,7 @@ packages:
       path: "../uni_color_name"
       relative: true
     source: path
-    version: "0.3.0"
+    version: "0.4.1"
   uuid:
     dependency: transitive
     description:
@@ -490,10 +490,10 @@ packages:
     dependency: transitive
     description:
       name: wfile
-      sha256: "76cd5440b6eaa6dd35a404b9d32b2dc7ed4c929616d28e1f8d664e77efe36c57"
+      sha256: "2be73888b0c625426947c90fa8b54f7dc7e6e031673c6baea1de8a17b890e93f"
       url: "https://pub.dev"
     source: hosted
-    version: "0.4.0"
+    version: "0.4.1"
   xml:
     dependency: transitive
     description:

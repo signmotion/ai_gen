@@ -24,7 +24,7 @@ environment:
 dependencies:
   collection: ">=1.16.0 <3.0.0"
   faker: ^2.1.0
-  id_gen: ^0.7.0
+  id_gen: ^0.7.2
   image: ^4.1.7
   meta: ">=1.10.0 <2.0.0"
   thematic_images:

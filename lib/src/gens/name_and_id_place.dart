@@ -27,7 +27,7 @@ class NameAndIdPlaceFakeProvider extends FakeProvider<NameAndIdPlaceR> {
     final predominantColors = <String, int>{};
     for (var i = 0; i < numColors; ++i) {
       final color = colorMap.randomEntry();
-      predominantColors[color.key] = color.value.colorRgbToIntRgb;
+      predominantColors[color.key] = color.value.colorRgbToInt8Rgb;
     }
 
     return (
